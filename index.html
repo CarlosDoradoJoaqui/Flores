@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="color-scheme" content="light">
+    <meta name="theme-color" content="#f6f0e6">
+    <meta name="format-detection" content="telephone=no, date=no, email=no, address=no">
+    <meta name="robots" content="noindex">
+    <!-- Vista previa al compartir. Si cambias los textos en js/config.js, actualiza también estas dos líneas. -->
+    <title>Tengo algo para ti 🌻</title>
+    <meta name="description" content="Pero primero tienes que descubrirlo...">
+    <meta property="og:title" content="Tengo algo para ti 🌻">
+    <meta property="og:description" content="Pero primero tienes que descubrirlo...">
+    <meta property="og:type" content="website">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="preload" href="assets/fonts/cormorant-garamond-500.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/outfit-500.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div id="back-layer" class="back-layer" aria-hidden="true"></div>
+    <canvas id="dust" aria-hidden="true"></canvas>
+    <div id="petals" class="petals" aria-hidden="true"></div>
+    <main id="app"></main>
+    <div id="petals-front" class="petals-front" aria-hidden="true"></div>
+    <button type="button" id="music-toggle" class="music-btn" aria-pressed="false" aria-label="Activar música">
+      <span class="music-glyph" aria-hidden="true">♪</span>
+    </button>
+    <p id="toast" class="toast" role="status" aria-live="polite"></p>
+    <noscript>
+      <p class="noscript">Esta carta necesita JavaScript para abrirse.</p>
+    </noscript>
+    <script src="js/config.js"></script>
+    <script src="js/flowers.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
